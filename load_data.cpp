@@ -98,7 +98,7 @@ void load_net(const char* net_file){
 	while(getln(fin, line) && n_link < metadata.n_link){
 		if(line[0] == '~')
 			continue;
-		sscanf(line, "%d %d %lf %lf %lf %lf %lf %lf %lf %d", 
+		sscanf(line, "%s %s %s %s %s %s %s %s %s %s", 
 			&tmp.init_node, &tmp.term_node, &tmp.capacity, &tmp.length, 
 			&tmp. free_time, &tmp.b, &tmp.power, &tmp.speed_limit, 
 			&tmp.toll, &tmp.type); 
